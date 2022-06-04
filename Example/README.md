@@ -5,6 +5,17 @@
 - `cd Example/`
 - `yarn install` again
 
+### !Warning!
+This daemon requires a lot of workers. 
+This solved by this:
+
+https://stackoverflow.com/questions/53930305/nodemon-error-system-limit-for-number-of-file-watchers-reached
+
+**Do not use a lot of workers and watchers. It freezes a system**
+
+And it requires installing NDK 21 via Android Studio
+
+
 ### Running on iOS
 
 - `cd ios && pod install && cd ..` - to install pods
